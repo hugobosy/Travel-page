@@ -44,7 +44,7 @@ section {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  grid-gap: 20px;
+  grid-gap: 30px;
 }
 
 .header__nav {
@@ -172,7 +172,7 @@ section {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  grid-gap: 50px;
+  grid-gap: 30px;
   -ms-flex-line-pack: center;
       align-content: center;
   padding: 0 30px;
@@ -233,7 +233,7 @@ section {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  grid-gap: 20px;
+  grid-gap: 30px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -336,7 +336,7 @@ section {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  grid-gap: 20px;
+  grid-gap: 30px;
   padding: 10px 30px;
 }
 
@@ -380,10 +380,10 @@ section {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
+  grid-gap: 30px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  grid-gap: 20px;
   padding: 10px 30px;
 }
 
@@ -451,7 +451,7 @@ section {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  grid-gap: 10px;
+  grid-gap: 30px;
   padding: 20px 0;
 }
 
@@ -551,6 +551,9 @@ section {
 }
 
 @media screen and (min-width: 576px) {
+  .header__nav-logo {
+    padding: 0 55px;
+  }
   .header__welcome-left form {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
@@ -716,7 +719,20 @@ section {
 
 @media screen and (min-width: 1200px) {
   .header__nav-link {
-    font-size: 2rem;
+    font-size: 1,6remrem;
+  }
+  .destination__content article p {
+    padding-top: 2px;
+    font-size: 1.6rem;
+  }
+  .stories__content-item h3 {
+    font-size: 1.6rem;
+  }
+  .stories__content-item p {
+    font-size: 1.4rem;
+  }
+  .stories__content-item a {
+    font-size: 1.4rem;
   }
   .footer {
     -ms-grid-columns: 2fr (1fr)[3];
@@ -751,5 +767,26 @@ section {
   }
   .footer__links a {
     font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .stories__content article h3 {
+    font-size: 1.9rem;
+  }
+  .stories__content article p {
+    font-size: 1.7rem;
+  }
+  .stories__content article a {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 992px) and (orientation: landscape) {
+  .header__nav-listItem {
+    padding: 7px;
+  }
+  .header__nav-link {
+    font-size: 1.4rem;
   }
 }
